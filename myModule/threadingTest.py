@@ -1,5 +1,6 @@
 from threading import Thread, Lock
 from time import sleep
+from multiprocessing import Process
 
 
 class Account(object):
@@ -23,7 +24,7 @@ class Account(object):
             if new_balance == 50:
                 raise NameError("异常了")
         finally:
-            print("异常了") #如果不释放锁将造成死锁等待
+           
             self._lock.release()
 
 
