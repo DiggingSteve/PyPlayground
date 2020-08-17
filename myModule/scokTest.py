@@ -2,6 +2,7 @@ from socket import socket, SOCK_STREAM, AF_INET
 from datetime import datetime
 
 
+
 def main():
     # 1.创建套接字对象并指定使用哪种传输服务
     # family=AF_INET - IPv4地址
