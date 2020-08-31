@@ -9,6 +9,7 @@ print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 返回上2
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from LinearAlgebra.merge_sort_interation import *
+
 count = 0
 
 
@@ -46,18 +47,19 @@ def merge_sort(list):
 
 if __name__ == "__main__":
     rand_list = []
-    for i in range(2 << 16):
+    for i in range(2 << 5):
         rand_list.append(round(random.random()*100, 2))
     rand_lis2 = []
-    for i in range(2 << 16):
+    for i in range(2 << 21):
         rand_lis2.append(round(random.random()*100, 2))
-    start = time.clock()
-    lst = merge_sort(rand_list)
-    end = time.clock()
-    s1=time.clock()
-    lst2=merge_sort_interation(rand_lis2)
-    s2=time.clock()
-    print("递归法排序时间  ", (end-start))
-    #print(lst)
-    print("迭代法排序时间  ", (s2-s1))
-   # print(lst2)
+    for i in range(1):
+        start = time.clock()
+        lst = merge_sort(rand_list)
+        end = time.clock()
+        s1=time.clock()
+        lst2=merge_sort_interation(rand_lis2)
+        s2=time.clock()
+        print("递归法排序时间  ", (end-start))
+       # print(lst)
+        print("迭代法排序时间  ", (s2-s1))
+        #print(lst2)
