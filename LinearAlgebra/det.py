@@ -98,12 +98,11 @@ def permute(nums):
         return result
     return backtrack([])  # 从空数组开始填充 直到
 
+a=np.arange(25).reshape(5, 5)
+print(det(a))
 
-a = det([[1.6, 2, -4], [-2, 2.44, 1], [-3, 4.44, -2]])
-print(a)
-cc = np.array([[1.6, 2, -4], [-2, 2.44, 1], [-3, 4.44, -2]])
-d = np.linalg.det(cc)
-print(d)
+
+print(np.linalg.det(a))
 
 # intertools.permutaions()
 
