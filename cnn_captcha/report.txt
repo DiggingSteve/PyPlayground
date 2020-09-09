@@ -1,0 +1,21 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'cnnlib/recognition_object.py'
+ outputting to 'cnnlib/recognition_object_v2.py'
+--------------------------------------------------------------------------------
+
+29:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+30:21: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+31:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+34:27: INFO: Added keywords to args of function 'tf.argmax'
+35:20: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+--------------------------------------------------------------------------------
+

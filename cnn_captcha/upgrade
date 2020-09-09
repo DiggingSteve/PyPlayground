@@ -1,0 +1,3 @@
+tf_upgrade_v2 --infile webserver_recognize_api.py --outfile webserver_recognize_api_v2.py
+
+tf_upgrade_v2 --infile cnnlib/recognition_object.py --outfile  cnnlib/recognition_object_v2.py
