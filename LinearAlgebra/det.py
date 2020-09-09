@@ -23,7 +23,7 @@ def det(arr):
     cc = ''
 
     for i in range(len(permutation)):
-        temp = 1
+        temp = 1.000000
         gg=''
         for j in range(len(permutation[i])):
             t = permutation[i][j]
@@ -98,11 +98,8 @@ def permute(nums):
         return result
     return backtrack([])  # 从空数组开始填充 直到
 
-a=np.arange(25).reshape(5, 5)
+a=np.random.rand(5,5)
 print(det(a))
-
-
 print(np.linalg.det(a))
-
 # intertools.permutaions()
 
