@@ -98,8 +98,17 @@ def permute(nums):
         return result
     return backtrack([])  # 从空数组开始填充 直到
 
+<<<<<<< HEAD
 a=np.random.rand(5,5)
 print(det(a))
 print(np.linalg.det(a))
+=======
+a=np.arange(100).reshape(10 , 10)
+print(det(a))
+
+
+
+
+>>>>>>> d217e08f42c2eef4cdf9d389a5abe28106782bec
 # intertools.permutaions()
 
